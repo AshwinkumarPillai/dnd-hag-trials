@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hag Trials — Turnabout Bonegrinder</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="frame">
+  <div id="stage">
+    <!-- background layer -->
+    <div id="bg"></div>
+
+    <!-- character sprite -->
+    <div id="sprite-layer"></div>
+
+    <!-- top HUD -->
+    <div id="hud">
+      <button id="btn-record" title="Court Record">⚖ Court Record</button>
+      <button id="btn-mute" title="Toggle sound">🔊</button>
+    </div>
+
+    <!-- dialogue box -->
+    <div id="dialogue" class="hidden">
+      <div id="nameplate"></div>
+      <div id="qchip" class="hidden"></div>
+      <div id="text"></div>
+      <div id="advance">▼</div>
+    </div>
+
+    <!-- chapter / testimony banner -->
+    <div id="banner" class="hidden"><span id="banner-text"></span></div>
+
+    <!-- OBJECTION! bubble -->
+    <div id="objection" class="hidden">
+      <div class="bubble"><span id="objection-text">OBJECTION!</span></div>
+    </div>
+
+    <!-- evidence popup -->
+    <div id="evidence-popup" class="hidden">
+      <div class="ev-card">
+        <div class="ev-title" id="ev-title"></div>
+        <div class="ev-img" id="ev-img"></div>
+        <div class="ev-desc" id="ev-desc"></div>
+        <div class="ev-added">Evidence added to the Court Record</div>
+      </div>
+    </div>
+
+    <!-- verdict stamp -->
+    <div id="verdict" class="hidden">
+      <div id="verdict-target"></div>
+      <div id="verdict-word"></div>
+    </div>
+
+    <!-- court record modal -->
+    <div id="record-modal" class="hidden">
+      <div class="rec-panel">
+        <h2>Court Record</h2>
+        <div id="rec-evidence"></div>
+        <h2>Chapters</h2>
+        <div id="rec-chapters"></div>
+        <button id="btn-close-record">Close</button>
+      </div>
+    </div>
+
+    <!-- title screen -->
+    <div id="title-screen">
+      <div class="title-card">
+        <div class="title-small">THE COURT OF BAROVIA presents</div>
+        <h1>THE HAG TRIALS</h1>
+        <div class="title-sub">✦ Turnabout Bonegrinder ✦</div>
+        <div class="title-parties">
+          Ibai · Ashborn · cardboard-Trygve · Irina · Ireena — <em>“the party”</em><br>
+          Morgantha · Offelia · Belladonna — <em>“the hags”</em>
+        </div>
+        <div class="title-press blink">— click to begin —</div>
+        <div class="title-disclaimer">Not legal advice. Please don't sue, S. von Z.</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hint">Click / Space / Enter to advance · R: Court Record · M: mute</div>
+</div>
+
+<script src="js/sprites.js"></script>
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+</body>
+</html>
